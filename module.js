@@ -26,3 +26,10 @@ for (let i = 1; i <= 10; i++) {
 console.log("ファイルを作成しました。");
 console.log("ファイルの内容は以下のとおりです。");
 console.log(fs.readFileSync("count-10.txt", "utf8"));
+
+const contents = "This is my second day learning node.js";
+
+fs.writeFileSync("second-day.txt", contents);
+console.log("ファイルを作成しました。");
+console.log("内容は以下の通りです。")
+console.log(fs.readFileSync("second-day.txt", "utf-8"));
